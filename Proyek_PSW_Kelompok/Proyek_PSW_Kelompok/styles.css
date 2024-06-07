@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+} 
+body{
+   font-family: "montserrat", sans-serif; 
+   font-weight: 500;
+   letter-spacing: 0.3px;
+}
+.col-md-3{
+    margin: 40px;
+    
+  }
+.ruangmateri{
+    width: 100%;
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.685);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 45px;
+}
+nav a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 1s;
+}
+nav h4 img{
+    width: 120px;
+    height: 120px;
+}
+nav h4{
+    font-family: 'Playfair Display', serif;
+    margin-top: 15px;
+    font-size: 15px;
+    letter-spacing: 0.6px; 
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav .list-name{
+    display: none;
+}
+nav .burger-bar{
+    font-size: 35px;
+    transition: color 2s;
+    cursor: pointer;
+    margin-right: 25px;
+    
+}
+nav .burger-bar:hover{
+    opacity: 0.8;
+}
+nav .list-name-android{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+    text-align: left;
+    width: 97%;
+    color: #414141;
+    background-color: #f6f6f6;
+}
+nav .list-name-android li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+nav .list-name-android li:first-of-type a{
+    border-top: 1px solid #e7e7e7;
+}
+nav .list-name-android li a{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e7e7e7;
+} 
+nav .list-name-android li a:hover{
+    opacity: 0.8;
+} 
+
+@media only screen and (min-width:1200px){
+    nav .list-name{
+        display: flex;
+    }
+    nav .burger-bar{
+        display: none;
+    }
+    nav .list-name-android{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1000px){
+    nav h4{
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 1000px){
+    nav h4{
+        display:flex:none;
+    }
+}
+.ruang{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("image/daniel-zjV8ptYgcEo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 20px;
+}
+
+.card-body h5{
+    color: white;
+}
+.text-secondary{
+    color: white;
+}
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("image/daniel-zjV8ptYgcEo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    letter-spacing: 0.8px;
+    height: 100vh;
+    border-radius: 20px;
+}
+.hero h1{
+    font-size: 68px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.hero h1 span{
+    font-family: 'Playfair Display', serif;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.section_1{
+    display: block;
+    color: inherit;
+   
+}
+.container .materi img:hover{
+    width: 20em;
+    transition: 2s;
+    animation: 2s;
+    overflow: hidden;
+
+}
+.materi img{
+    transition: 2s;
+    animation: 2s;
+}
+.section_1 .section_1__text .container{
+    padding: 50px 20px;
+    margin-top: 60px;
+}
+.section_1 h2{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.section_1 p{
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.section_1 .section_1__img{
+    background-image: url('image/20221108_204559.png');
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    transition: 5s;
+    animation: 5s;
+}
+@media only screen and (min-width: 1000px){
+    .section_1{
+        display: flex;
+    }
+    .section_1 .section_1__text{
+        flex: 1;
+        order: 2;
+    }
+    .section_1 .section_1__img{
+        flex: 1;
+        order: 1;
+    }
+}
+
+.about_us {
+    margin-left: -100px;
+   
+   
+}
+.list-name .nav-item.dropdown{
+    margin-top: 32px;
+    padding-right: 5px;
+}
+
+.footer_2{
+    padding: 30px 10px;
+    background-color: #7a0000;
+    font-size: 11px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    
+    
+}
+.footer_2_1 img {
+    width: 250px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+}
+.hero li {
+    column-rule-style: none;
+    align-content: center;
+    color:#7a0000 ;
+    
+}
+
+.footer_2 .arrow {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    margin-left: 200px;
+    text-shadow: 1px 1px 1px rgb(197, 197, 197);
+    display: block;
+    margin-bottom: 40px; 
+    
+}
+.footer_2 .arrow ion-icon {
+    font-size: 35px;
+    
+}  
+ion-icon{
+    font-size:20px
+}
+.footer_2 .arrow__2{
+    display :flex
+    
+}
+.card-title h6{
+    font-weight: 600; 
+}
+.arrow__3 {
+    position: relative;
+    margin-left: 200px;
+}
+.arrow__3 h4 {
+    font-weight: 600;
+}
+.arrow__3 ul {
+    display: flex;    
+}
+.arrow__3 ul li {
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px; 
+  
+}
+.arrow__3  img {
+    width: 40px;
+    margin-left: 10px;
+}
+@media only screen and (min-width: 1000px){
+    .footer_2{
+        display: flex;
+    }
+}
+.section_features p {
+    margin-left: 20px;
+}
+@media only screen and (min-width: 1000px){
+    .footer_1 {
+        display: flex;
+        
+        justify-content: center;
+    }
+   
+}
+.footer_1 {
+    justify-content: center;
+    color: gold;
+    font-size: 11px;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.niko{
+    padding-top: 15px;
+}
